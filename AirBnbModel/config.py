@@ -1,5 +1,6 @@
 import yaml
 from box import Box
 
-with open("config.yml", "r") as ymlfile:
+with open("configs/config.yml", "r") as ymlfile:
     cfg = Box(yaml.safe_load(ymlfile))
+
