@@ -1,5 +1,5 @@
-from AirBnbModel.run import main_cli
+from AirBnbModel.run import main
 
 
 if __name__ == "__main__":
-    main_cli()
+    main()

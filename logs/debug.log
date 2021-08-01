@@ -1,0 +1,705 @@
+2021-07-23 08:30:03,238 - AirBnbModel.source.run - INFO - Loading user data from data/source/users.csv
+2021-07-23 08:30:03,253 - AirBnbModel.source.run - INFO - Preprocessing users_df
+2021-07-23 08:30:03,269 - AirBnbModel.source.run - INFO - User data preprocessed and saved on data/staging/users.csv
+2021-07-23 09:01:41,409 - AirBnbModel.source.run - INFO - Loading user data from data/source/users.csv
+2021-07-23 09:01:41,409 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 09:01:41,409 - AirBnbModel.source.run - INFO - User data saved on data/processed/users.csv
+2021-07-23 09:01:55,445 - AirBnbModel.run - ERROR - Tastk preprocess failed
+2021-07-23 09:03:22,312 - AirBnbModel.preprocess.run - INFO - Loading user data from data/staging/users.csv
+2021-07-23 09:03:22,327 - AirBnbModel.preprocess.run - INFO - Preprocessing users_df
+2021-07-23 09:03:22,327 - AirBnbModel.preprocess.run - INFO - User data preprocessed and saved on data/processed/users.csv
+2021-07-23 09:23:22,825 - AirBnbModel.source.run - INFO - Loading user data from data/source/users.csv
+2021-07-23 09:23:22,825 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 09:23:22,825 - AirBnbModel.source.run - INFO - User data saved on data/staging/users.csv
+2021-07-23 09:24:08,281 - AirBnbModel.source.run - INFO - Loading user data from data/source/users.csv
+2021-07-23 09:24:08,281 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 09:24:08,281 - AirBnbModel.source.run - INFO - User data saved on data/staging/users.csv
+2021-07-23 09:29:44,674 - AirBnbModel.run - ERROR - Tastk source failed
+2021-07-23 09:30:56,887 - AirBnbModel.run - ERROR - Tastk source failed
+2021-07-23 09:35:18,434 - AirBnbModel.source.run - INFO - Loading user data from data/source/users.csv
+2021-07-23 09:35:18,465 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 09:35:18,481 - AirBnbModel.source.run - INFO - User data saved on data/staging/users.csv
+2021-07-23 09:37:11,753 - AirBnbModel.source.run - INFO - Loading user data from data/source/users.csv
+2021-07-23 09:37:11,753 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 09:37:11,753 - AirBnbModel.source.run - INFO - User data saved on data/staging/users.csv
+2021-07-23 09:42:18,660 - AirBnbModel.source.run - INFO - Loading user data from data/source/users.csv
+2021-07-23 09:42:18,660 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 09:42:18,676 - AirBnbModel.source.run - INFO - User data saved on data/staging/users.csv
+2021-07-23 09:47:04,312 - AirBnbModel.run - INFO - Executing source task on train mode
+2021-07-23 09:47:04,313 - AirBnbModel.source.run - INFO - Loading user data from data/source/users.csv
+2021-07-23 09:47:04,316 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 09:47:04,319 - AirBnbModel.source.run - INFO - User data saved on data/staging/users.csv
+2021-07-23 10:19:40,435 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:19:40,436 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:22:04,152 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:22:04,152 - AirBnbModel.source.run - ERROR - Selected mode (train_eval) is not valid. Mode should be one of 'train_eval', 'predict'
+2021-07-23 10:22:04,152 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:24:30,595 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:24:30,595 - AirBnbModel.source.run - ERROR - Selected mode (train_eval) is not valid. Mode should be one of 'train_eval', 'predict'
+2021-07-23 10:24:30,595 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:26:12,745 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:26:12,745 - AirBnbModel.source.run - ERROR - Selected mode (train_eval) is not valid. Mode should be one of 'train_eval', 'predict'
+2021-07-23 10:26:12,745 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:30:15,488 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:30:15,488 - AirBnbModel.source.run - ERROR - Selected mode (train_eval) is not valid. Mode should be one of 'train_eval', 'predict'
+Traceback (most recent call last):
+  File "C:\Users\Nico\Documents\Data Science\AirBnbModel\AirBnbModel\source\run.py", line 17, in main
+    assert mode in ('train', 'predict'), 'aaa'
+AssertionError: aaa
+2021-07-23 10:30:15,503 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:31:55,864 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:31:55,864 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:32:20,078 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:32:20,079 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:33:27,103 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:33:27,105 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:35:28,610 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:35:28,625 - AirBnbModel.source.run - ERROR - Task failed
+2021-07-23 10:35:28,625 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:36:31,235 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:36:31,237 - AirBnbModel.source.run - ERROR - Selected mode (train_eval) is not valid. Mode should be one of 'train_eval', 'predict'
+2021-07-23 10:36:31,240 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:42:16,567 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:42:16,569 - AirBnbModel.source.run - INFO - Loading user data from data/train/source/users.csv
+2021-07-23 10:42:16,574 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:43:19,403 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:43:19,403 - AirBnbModel.source.run - INFO - Loading user data from data/train/source/users.csv
+2021-07-23 10:43:19,426 - AirBnbModel.source.run - INFO - 4 rows and 4 colums loaded on users_df
+2021-07-23 10:43:19,426 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:45:00,864 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:45:00,866 - AirBnbModel.source.run - INFO - Loading user data from data/train/source/users.csv
+2021-07-23 10:45:00,876 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:46:12,548 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:46:12,548 - AirBnbModel.source.run - INFO - Loading user data from data/train/source/users.csv
+2021-07-23 10:46:12,563 - AirBnbModel.source.run - INFO - 4 rows and 4 colums loaded on users_df
+2021-07-23 10:46:12,563 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:49:03,987 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:49:04,003 - AirBnbModel.source.run - INFO - Loading user data from data/train/source/users.csv
+2021-07-23 10:49:04,003 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 10:49:04,003 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:50:03,712 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:50:03,712 - AirBnbModel.source.run - INFO - Loading user data from data/train/source/users.csv
+2021-07-23 10:50:03,712 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 10:50:03,712 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:50:40,153 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:50:40,153 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 10:54:53,777 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:54:53,777 - AirBnbModel.source.run - INFO - Loading user data from data/train/source/users.csv
+2021-07-23 10:54:53,777 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 10:54:53,793 - AirBnbModel.source.run - INFO - User data saved on data/train/staging/users.csv
+2021-07-23 10:55:28,286 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-23 10:55:28,286 - AirBnbModel.source.run - INFO - Loading user data from data/train/source/users.csv
+2021-07-23 10:55:28,286 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 10:55:28,294 - AirBnbModel.source.run - INFO - User data saved on data/train/staging/users.csv
+2021-07-23 11:04:24,474 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-23 11:04:24,474 - AirBnbModel.source.run - INFO - Loading user data from data/predict/source/users.csv
+2021-07-23 11:04:24,474 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 11:05:32,203 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-23 11:05:32,203 - AirBnbModel.source.run - INFO - Loading user data from data/predict/source/users.csv
+2021-07-23 11:05:32,218 - AirBnbModel.run - ERROR - Task source failed
+2021-07-23 11:06:14,949 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-23 11:06:14,949 - AirBnbModel.source.run - INFO - Loading user data from data/predict/source/users.csv
+2021-07-23 11:06:14,965 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 11:06:14,965 - AirBnbModel.source.run - INFO - User data saved on data/predict/staging/users.csv
+2021-07-23 11:06:35,400 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-23 11:06:35,401 - AirBnbModel.source.run - INFO - Loading user data from data/predict/source/users.csv
+2021-07-23 11:06:35,404 - AirBnbModel.source.run - INFO - 4 rows and 3 colums loaded on users_df
+2021-07-23 11:06:35,408 - AirBnbModel.source.run - INFO - User data saved on data/predict/staging/users.csv
+2021-07-23 11:06:49,971 - AirBnbModel.run - INFO - Executing preprocess task on predict mode
+2021-07-23 11:06:49,971 - AirBnbModel.run - ERROR - Task preprocess failed
+2021-07-23 11:07:28,988 - AirBnbModel.run - INFO - Executing preprocess task on predict mode
+2021-07-23 11:07:28,988 - AirBnbModel.preprocess.run - INFO - Loading user data from data/predict/staging/users.csv
+2021-07-23 11:07:29,003 - AirBnbModel.preprocess.run - INFO - Preprocessed user data saved on data/predict/processed/users.csv
+2021-07-23 11:07:47,222 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-23 11:07:47,222 - AirBnbModel.preprocess.run - INFO - Loading user data from data/train/staging/users.csv
+2021-07-23 11:07:47,238 - AirBnbModel.preprocess.run - INFO - Preprocessed user data saved on data/train/processed/users.csv
+2021-07-23 11:29:08,995 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-23 11:38:50,505 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-23 11:38:50,506 - AirBnbModel.run - ERROR - Task model failed
+2021-07-23 11:40:26,751 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-23 11:40:26,751 - AirBnbModel.run - ERROR - Task model failed
+2021-07-23 11:41:35,761 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-23 11:42:01,906 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-07-23 12:06:57,036 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-07-23 12:06:57,038 - AirBnbModel.run - ERROR - Task model failed
+2021-07-23 12:07:31,204 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-07-23 12:08:13,017 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-07-23 12:08:33,703 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-07-23 12:08:43,606 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-07-26 08:17:52,619 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 08:17:52,619 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 08:17:52,619 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 08:19:39,511 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 08:19:39,511 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 08:19:39,511 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 08:20:42,122 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 08:20:42,122 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 08:22:25,646 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 08:22:25,646 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 08:22:25,646 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 08:30:47,687 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 08:30:47,687 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:54:11,621 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:54:11,621 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:54:11,621 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 09:54:31,206 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:54:31,206 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:54:49,226 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:54:49,226 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:54:49,226 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 09:55:23,772 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:55:23,772 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:55:55,274 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:55:55,274 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:55:55,274 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 09:56:18,775 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:56:18,776 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:56:18,776 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 09:56:39,961 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:56:39,961 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:56:39,961 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 09:57:18,177 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:57:18,177 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:57:39,126 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:57:39,126 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:58:08,352 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:58:08,352 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:58:43,700 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:58:43,701 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:59:02,547 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:59:02,547 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 09:59:54,920 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 09:59:54,920 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 10:01:55,517 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 10:01:55,517 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 10:01:55,517 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-26 10:01:55,548 - AirBnbModel.source.train - INFO - 4 rows and 3 colums loaded
+2021-07-26 10:01:55,564 - AirBnbModel.source.train - INFO - Loading target dataset from data/train/source/users.csv
+2021-07-26 10:01:55,564 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 10:03:10,495 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 10:03:10,495 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 10:03:10,495 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-26 10:03:10,495 - AirBnbModel.source.train - INFO - 4 rows and 3 colums loaded
+2021-07-26 10:03:10,511 - AirBnbModel.source.train - INFO - Loading target dataset from data/train/source/users.csv
+2021-07-26 10:03:10,511 - AirBnbModel.source.train - INFO - 4 rows and 1 colums loaded
+2021-07-26 10:04:32,573 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 10:04:32,573 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 10:04:32,573 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-26 10:04:32,573 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 10:05:22,060 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 10:05:22,060 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 10:05:22,060 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-26 10:05:22,075 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 10:06:06,791 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 10:06:06,791 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 10:06:06,791 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-26 10:06:06,791 - AirBnbModel.run - ERROR - Task source failed
+2021-07-26 10:06:36,422 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 10:06:36,422 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 10:06:36,422 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-26 10:06:36,437 - AirBnbModel.source.train - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:06:36,453 - AirBnbModel.source.train - INFO - Loading target dataset from data/train/source/users.csv
+2021-07-26 10:06:36,453 - AirBnbModel.source.train - INFO - 4 rows and 1 colums loaded
+2021-07-26 10:11:45,171 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-26 10:11:45,171 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-26 10:11:45,171 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-26 10:11:45,171 - AirBnbModel.source.train - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:11:45,186 - AirBnbModel.source.train - DEBUG - users dataset structure: /n       parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+3              3           3
+4              1           1
+2021-07-26 10:11:45,186 - AirBnbModel.source.train - INFO - users dataset saved on data/train/staging/users.csv
+2021-07-26 10:11:45,186 - AirBnbModel.source.train - INFO - Loading target dataset from data/train/source/users.csv
+2021-07-26 10:11:45,202 - AirBnbModel.source.train - INFO - 4 rows and 1 colums loaded
+2021-07-26 10:11:45,202 - AirBnbModel.source.train - DEBUG - target dataset structure: /n       target
+user        
+1          1
+2          1
+3          0
+4          0
+2021-07-26 10:11:45,202 - AirBnbModel.source.train - INFO - target dataset saved on data/train/staging/target.csv
+2021-07-26 10:19:17,597 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-26 10:19:17,598 - AirBnbModel.source.run - INFO - Running extraction on predict mode
+2021-07-26 10:19:17,599 - AirBnbModel.source.predict - INFO - Loading users dataset from data/predict/source/users.csv
+2021-07-26 10:19:17,605 - AirBnbModel.source.predict - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:19:17,612 - AirBnbModel.source.predict - DEBUG - users dataset structure:       parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-26 10:19:17,615 - AirBnbModel.source.predict - INFO - users dataset saved on data/predict/staging/users.csv
+2021-07-26 10:30:06,206 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-26 10:30:06,206 - AirBnbModel.preprocess.run - INFO - Running preprocessing on training mode. Training parameters for preprocessing
+2021-07-26 10:30:06,206 - AirBnbModel.preprocess.train - INFO - Loading users dataset from data/train/staging/users.csv
+2021-07-26 10:30:06,206 - AirBnbModel.run - ERROR - Task preprocess failed
+2021-07-26 10:30:25,833 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-26 10:30:25,833 - AirBnbModel.preprocess.run - INFO - Running preprocessing on training mode. Training parameters for preprocessing
+2021-07-26 10:30:25,833 - AirBnbModel.preprocess.train - INFO - Loading users dataset from data/train/staging/users.csv
+2021-07-26 10:30:25,849 - AirBnbModel.preprocess.train - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:30:25,849 - AirBnbModel.preprocess.train - DEBUG - users dataset structure:       parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-26 10:30:25,865 - AirBnbModel.preprocess.train - INFO - users dataset saved on data/train/processed/X.csv
+2021-07-26 10:30:25,865 - AirBnbModel.preprocess.train - INFO - Loading target dataset from data/train/staging/target.csv
+2021-07-26 10:30:25,880 - AirBnbModel.preprocess.train - INFO - 4 rows and 1 colums loaded
+2021-07-26 10:30:25,880 - AirBnbModel.preprocess.train - DEBUG - target dataset structure:       target
+user        
+1          1
+2          1
+2021-07-26 10:30:25,880 - AirBnbModel.preprocess.train - INFO - target dataset saved on data/train/processed/target.csv
+2021-07-26 10:31:23,971 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-26 10:31:23,982 - AirBnbModel.preprocess.run - INFO - Running preprocessing on training mode. Training parameters for preprocessing
+2021-07-26 10:31:23,995 - AirBnbModel.preprocess.train - INFO - Loading users dataset from data/train/staging/users.csv
+2021-07-26 10:31:24,005 - AirBnbModel.preprocess.train - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:31:24,020 - AirBnbModel.preprocess.train - DEBUG - users dataset structure: 
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-26 10:31:24,031 - AirBnbModel.preprocess.train - INFO - users dataset saved on data/train/processed/X.csv
+2021-07-26 10:31:24,033 - AirBnbModel.preprocess.train - INFO - Loading target dataset from data/train/staging/target.csv
+2021-07-26 10:31:24,050 - AirBnbModel.preprocess.train - INFO - 4 rows and 1 colums loaded
+2021-07-26 10:31:24,091 - AirBnbModel.preprocess.train - DEBUG - target dataset structure: 
+      target
+user        
+1          1
+2          1
+2021-07-26 10:31:24,100 - AirBnbModel.preprocess.train - INFO - target dataset saved on data/train/processed/target.csv
+2021-07-26 10:32:15,423 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-26 10:32:15,423 - AirBnbModel.preprocess.run - INFO - Running preprocessing on training mode. Training parameters for preprocessing
+2021-07-26 10:32:15,423 - AirBnbModel.preprocess.train - INFO - Loading users dataset from data/train/staging/users.csv
+2021-07-26 10:32:15,438 - AirBnbModel.preprocess.train - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:32:15,438 - AirBnbModel.preprocess.train - DEBUG - users dataset structure: 
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-26 10:32:15,454 - AirBnbModel.preprocess.train - INFO - users dataset saved on data/train/processed/X.csv
+2021-07-26 10:32:15,454 - AirBnbModel.preprocess.train - INFO - Loading target dataset from data/train/staging/target.csv
+2021-07-26 10:32:15,454 - AirBnbModel.preprocess.train - INFO - 4 rows and 1 colums loaded
+2021-07-26 10:32:15,469 - AirBnbModel.preprocess.train - DEBUG - target dataset structure: 
+      target
+user        
+1          1
+2          1
+2021-07-26 10:32:15,469 - AirBnbModel.preprocess.train - INFO - target dataset saved on data/train/processed/target.csv
+2021-07-26 10:32:25,284 - AirBnbModel.run - INFO - Executing preprocess task on predict mode
+2021-07-26 10:32:25,284 - AirBnbModel.preprocess.run - INFO - Running preprocessing
+2021-07-26 10:32:56,422 - AirBnbModel.run - INFO - Executing preprocess task on predict mode
+2021-07-26 10:32:56,422 - AirBnbModel.preprocess.run - INFO - Running preprocessing
+2021-07-26 10:32:56,422 - AirBnbModel.preprocess.predict - INFO - Loading users dataset from data/predict/staging/users.csv
+2021-07-26 10:32:56,422 - AirBnbModel.preprocess.predict - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:32:56,438 - AirBnbModel.preprocess.predict - DEBUG - users dataset structure: 
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-26 10:32:56,438 - AirBnbModel.preprocess.predict - INFO - users dataset saved on data/predict/processed/X.csv
+2021-07-26 10:38:14,535 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-26 10:38:14,535 - AirBnbModel.model.run - INFO - Running training of the model on Cross Validation with 10 folds. Evaluation metric: F1 Score
+2021-07-26 10:38:14,551 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.csv
+2021-07-26 10:38:14,551 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/Y.csv
+2021-07-26 10:38:14,551 - AirBnbModel.run - ERROR - Task model failed
+2021-07-26 10:39:00,186 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-26 10:39:00,186 - AirBnbModel.preprocess.run - INFO - Running preprocessing on training mode. Training parameters for preprocessing
+2021-07-26 10:39:00,186 - AirBnbModel.preprocess.train - INFO - Loading users dataset from data/train/staging/users.csv
+2021-07-26 10:39:00,201 - AirBnbModel.preprocess.train - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:39:00,201 - AirBnbModel.preprocess.train - DEBUG - users dataset structure: 
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-26 10:39:00,201 - AirBnbModel.preprocess.train - INFO - users dataset saved on data/train/processed/X.csv
+2021-07-26 10:39:00,201 - AirBnbModel.preprocess.train - INFO - Loading target dataset from data/train/staging/target.csv
+2021-07-26 10:39:00,217 - AirBnbModel.preprocess.train - INFO - 4 rows and 1 colums loaded
+2021-07-26 10:39:00,217 - AirBnbModel.preprocess.train - DEBUG - target dataset structure: 
+      target
+user        
+1          1
+2          1
+2021-07-26 10:39:00,217 - AirBnbModel.preprocess.train - INFO - target dataset saved on data/train/processed/Y.csv
+2021-07-26 10:39:10,629 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-26 10:39:10,645 - AirBnbModel.preprocess.run - INFO - Running preprocessing on training mode. Training parameters for preprocessing
+2021-07-26 10:39:10,645 - AirBnbModel.preprocess.train - INFO - Loading users dataset from data/train/staging/users.csv
+2021-07-26 10:39:10,645 - AirBnbModel.preprocess.train - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:39:10,645 - AirBnbModel.preprocess.train - DEBUG - users dataset structure: 
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-26 10:39:10,645 - AirBnbModel.preprocess.train - INFO - users dataset saved on data/train/processed/X.csv
+2021-07-26 10:39:10,645 - AirBnbModel.preprocess.train - INFO - Loading target dataset from data/train/staging/target.csv
+2021-07-26 10:39:10,661 - AirBnbModel.preprocess.train - INFO - 4 rows and 1 colums loaded
+2021-07-26 10:39:10,661 - AirBnbModel.preprocess.train - DEBUG - target dataset structure: 
+      target
+user        
+1          1
+2          1
+2021-07-26 10:39:10,661 - AirBnbModel.preprocess.train - INFO - target dataset saved on data/train/processed/Y.csv
+2021-07-26 10:39:20,349 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-26 10:39:20,349 - AirBnbModel.model.run - INFO - Running training of the model on Cross Validation with 10 folds. Evaluation metric: F1 Score
+2021-07-26 10:39:20,349 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.csv
+2021-07-26 10:39:20,364 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/Y.csv
+2021-07-26 10:39:20,364 - AirBnbModel.run - ERROR - Task model failed
+2021-07-26 10:39:48,499 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-26 10:39:48,499 - AirBnbModel.model.run - INFO - Running training of the model on Cross Validation with 10 folds. Evaluation metric: F1 Score
+2021-07-26 10:39:48,499 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.csv
+2021-07-26 10:39:48,499 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/Y.csv
+2021-07-26 10:42:24,313 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-26 10:42:24,313 - AirBnbModel.preprocess.run - INFO - Running preprocessing on training mode. Training parameters for preprocessing
+2021-07-26 10:42:24,313 - AirBnbModel.preprocess.train - INFO - Loading users dataset from data/train/staging/users.csv
+2021-07-26 10:42:24,313 - AirBnbModel.preprocess.train - INFO - 4 rows and 2 colums loaded
+2021-07-26 10:42:24,313 - AirBnbModel.preprocess.train - DEBUG - users dataset structure: 
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-26 10:42:24,313 - AirBnbModel.preprocess.train - INFO - users dataset saved on data/train/processed/X.csv
+2021-07-26 10:42:24,329 - AirBnbModel.preprocess.train - INFO - Loading target dataset from data/train/staging/target.csv
+2021-07-26 10:42:24,329 - AirBnbModel.preprocess.train - INFO - 4 rows and 1 colums loaded
+2021-07-26 10:42:24,329 - AirBnbModel.preprocess.train - DEBUG - target dataset structure: 
+      target
+user        
+1          1
+2          1
+2021-07-26 10:42:24,329 - AirBnbModel.preprocess.train - INFO - target dataset saved on data/train/processed/Y.csv
+2021-07-26 10:42:45,749 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-26 10:42:45,749 - AirBnbModel.model.run - INFO - Running training of the model on Cross Validation with 10 folds. Evaluation metric: F1 Score
+2021-07-26 10:42:45,749 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.csv
+2021-07-26 10:42:45,749 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/Y.csv
+2021-07-26 10:44:23,181 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-26 10:44:23,181 - AirBnbModel.model.run - INFO - Running training of the model on Cross Validation with 10 folds. Evaluation metric: F1 Score
+2021-07-26 10:44:23,181 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.csv
+2021-07-26 10:44:23,197 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/Y.csv
+2021-07-26 10:45:29,851 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-26 10:45:29,866 - AirBnbModel.model.run - INFO - Running training of the model on Cross Validation with 10 folds. Evaluation metric: F1 Score
+2021-07-26 10:45:29,866 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.csv
+2021-07-26 10:45:29,866 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/Y.csv
+2021-07-27 08:09:47,666 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 08:09:47,668 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-27 08:09:47,668 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-27 08:09:47,702 - AirBnbModel.source.train - INFO - 4 rows and 2 colums loaded
+2021-07-27 08:09:47,715 - AirBnbModel.source.train - DEBUG - users dataset structure:       parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-27 08:09:47,716 - AirBnbModel.run - ERROR - Task source failed
+2021-07-27 08:12:27,429 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 08:12:27,432 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-27 08:12:27,432 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-27 08:12:27,456 - AirBnbModel.source.train - INFO - 4 rows and 2 colums loaded
+2021-07-27 08:12:27,470 - AirBnbModel.source.train - DEBUG - users dataset structure:       parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-27 08:12:27,472 - AirBnbModel.source.train - INFO - users dataset saved on data/train/staging/users.pkl
+2021-07-27 08:12:27,473 - AirBnbModel.source.train - INFO - Loading target dataset from data/train/source/users.csv
+2021-07-27 08:12:27,483 - AirBnbModel.source.train - INFO - 4 rows and 1 colums loaded
+2021-07-27 08:12:27,487 - AirBnbModel.source.train - DEBUG - target dataset structure:       target
+user        
+1          1
+2          1
+2021-07-27 08:12:27,488 - AirBnbModel.source.train - INFO - target dataset saved on data/train/staging/target.pkl
+2021-07-27 08:14:07,309 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 08:14:07,309 - AirBnbModel.source.run - INFO - Running extraction on training mode
+2021-07-27 08:14:07,309 - AirBnbModel.source.train - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-27 08:14:07,325 - AirBnbModel.source.train - INFO - 4 rows and 2 colums loaded
+2021-07-27 08:14:07,325 - AirBnbModel.source.train - DEBUG - users dataset structure:       parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-27 08:14:07,325 - AirBnbModel.source.train - INFO - users dataset saved on data/train/staging/users.pkl
+2021-07-27 08:14:07,325 - AirBnbModel.source.train - INFO - Loading target dataset from data/train/source/users.csv
+2021-07-27 08:14:07,325 - AirBnbModel.source.train - INFO - 4 rows and 1 colums loaded
+2021-07-27 08:14:07,341 - AirBnbModel.source.train - DEBUG - target dataset structure:       target
+user        
+1          1
+2          1
+2021-07-27 08:14:07,341 - AirBnbModel.source.train - INFO - target dataset saved on data/train/staging/target.pkl
+2021-07-27 08:14:56,101 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-27 08:14:56,101 - AirBnbModel.preprocess.run - INFO - Running preprocessing on training mode. Training parameters for preprocessing
+2021-07-27 08:14:56,101 - AirBnbModel.preprocess.train - INFO - Loading users dataset from data/train/staging/users.pkl
+2021-07-27 08:14:56,117 - AirBnbModel.preprocess.train - INFO - 4 rows and 2 colums loaded
+2021-07-27 08:14:56,132 - AirBnbModel.preprocess.train - DEBUG - users dataset structure: 
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-27 08:14:56,132 - AirBnbModel.preprocess.train - INFO - users dataset saved on data/train/processed/X.pkl
+2021-07-27 08:14:56,132 - AirBnbModel.preprocess.train - INFO - Loading target dataset from data/train/staging/target.pkl
+2021-07-27 08:14:56,132 - AirBnbModel.preprocess.train - INFO - 4 rows and 1 colums loaded
+2021-07-27 08:14:56,148 - AirBnbModel.preprocess.train - DEBUG - target dataset structure: 
+      target
+user        
+1          1
+2          1
+2021-07-27 08:14:56,148 - AirBnbModel.preprocess.train - INFO - target dataset saved on data/train/processed/Y.pkl
+2021-07-27 08:15:10,280 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-27 08:15:10,280 - AirBnbModel.model.run - INFO - Running training of the model on Cross Validation with 10 folds. Evaluation metric: F1 Score
+2021-07-27 08:15:10,280 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.csv
+2021-07-27 08:15:10,280 - AirBnbModel.run - ERROR - Task model failed
+2021-07-27 08:16:05,583 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-27 08:16:05,583 - AirBnbModel.model.run - INFO - Running training of the model on Cross Validation with 10 folds. Evaluation metric: F1 Score
+2021-07-27 08:16:05,583 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-27 08:16:05,583 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/Y.pkl
+2021-07-27 11:05:45,108 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:05:45,108 - AirBnbModel.run - ERROR - Task source failed
+2021-07-27 11:06:18,662 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:07:15,568 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-27 11:07:39,962 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:11:59,138 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:48:25,358 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:49:31,288 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:50:59,040 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:53:04,634 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:54:56,702 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:54:56,702 - AirBnbModel.run - ERROR - Task source failed
+2021-07-27 11:55:31,571 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:55:31,571 - AirBnbModel.run - ERROR - Task source failed
+2021-07-27 11:56:36,023 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 11:59:05,757 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 12:03:37,266 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 12:03:37,266 - AirBnbModel.run - ERROR - Task source failed
+2021-07-27 12:04:45,117 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 12:06:43,604 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 12:08:38,687 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 12:11:58,399 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 12:11:58,415 - AirBnbModel.run - ERROR - Task source failed
+2021-07-27 12:12:14,920 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 12:14:31,588 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 12:14:31,588 - AirBnbModel.run - ERROR - Task source failed
+2021-07-27 12:15:33,871 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-07-27 12:15:33,871 - AirBnbModel.source.run - INFO - Loading users dataset from data/train/source/users.csv
+2021-07-27 12:15:33,887 - AirBnbModel.source.run - INFO - 4 rows and 2 colums loaded
+2021-07-27 12:15:33,902 - AirBnbModel.source.run - DEBUG - users dataset structure preview:       parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-27 12:15:33,902 - AirBnbModel.source.run - INFO - users dataset saved on data/train/staging/users.pkl
+2021-07-27 12:15:33,902 - AirBnbModel.source.run - INFO - Loading target dataset from data/train/source/users.csv
+2021-07-27 12:15:33,902 - AirBnbModel.source.run - INFO - 4 rows and 1 colums loaded
+2021-07-27 12:15:33,918 - AirBnbModel.source.run - DEBUG - target dataset structure preview:       target
+user        
+1          1
+2          1
+2021-07-27 12:15:33,918 - AirBnbModel.source.run - INFO - target dataset saved on data/train/staging/target.pkl
+2021-07-27 12:17:36,943 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-27 12:17:36,943 - AirBnbModel.run - ERROR - Task source failed
+2021-07-27 12:20:23,424 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-27 12:20:23,424 - AirBnbModel.source.run - INFO - 4 rows and 2 colums loaded 
+            for users from data/predict/source/users.csv
+2021-07-27 12:20:23,439 - AirBnbModel.source.run - DEBUG - users dataset structure preview:
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-27 12:20:23,439 - AirBnbModel.source.run - INFO - users dataset saved on data/train/staging/users.pkl
+2021-07-27 12:36:19,227 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-27 12:36:19,243 - AirBnbModel.source.run - INFO - 4 rows and 2 colums loaded for users from data/predict/source/users.csv
+2021-07-27 12:36:19,258 - AirBnbModel.source.run - DEBUG - users dataset structure preview:
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-27 12:36:19,258 - AirBnbModel.run - ERROR - Task source failed
+2021-07-27 12:36:38,973 - AirBnbModel.run - INFO - Executing source task on predict mode
+2021-07-27 12:36:38,973 - AirBnbModel.source.run - INFO - 4 rows and 2 colums loaded for users from data/predict/source/users.csv
+2021-07-27 12:36:38,989 - AirBnbModel.source.run - DEBUG - users dataset structure preview:
+      parameter1  parameter2
+user                        
+1              2           3
+2              3           4
+2021-07-27 12:36:38,989 - AirBnbModel.source.run - INFO - users dataset saved on data/predict/staging/users.pkl
+2021-07-27 18:52:01,581 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-27 19:06:12,050 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-27 19:06:12,052 - AirBnbModel.run - ERROR - Task preprocess failed
+2021-07-27 19:06:39,786 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-27 19:06:39,786 - AirBnbModel.run - ERROR - Task preprocess failed
+2021-07-27 19:07:16,633 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-27 19:07:51,812 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-27 19:13:24,551 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-27 19:13:24,551 - AirBnbModel.run - ERROR - Task preprocess failed
+2021-07-27 19:15:36,506 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-27 19:15:36,514 - AirBnbModel.run - ERROR - Task preprocess failed
+2021-07-27 19:16:04,656 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-27 19:21:50,225 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-28 07:38:56,995 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-28 07:38:57,016 - AirBnbModel.run - ERROR - Task preprocess failed
+2021-07-28 07:39:18,820 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-28 07:50:57,409 - AirBnbModel.run - INFO - Executing preprocess task on predict mode
+2021-07-28 07:50:57,410 - AirBnbModel.run - ERROR - Task preprocess failed
+2021-07-28 07:51:54,073 - AirBnbModel.run - INFO - Executing preprocess task on predict mode
+2021-07-28 07:51:54,108 - AirBnbModel.preprocess.run - INFO - User data loaded for preprocessing from data/predict/staging/users.pkl
+2021-07-28 07:51:54,109 - AirBnbModel.preprocess.run - INFO - User key data properties have been validated
+2021-07-28 07:51:54,109 - AirBnbModel.preprocess.run - INFO - User data has been preprocessed
+2021-07-28 07:51:54,111 - AirBnbModel.preprocess.run - INFO - User data preprocessing finished, data saved on data/predict/processed/X.pkl
+2021-07-28 07:52:48,371 - AirBnbModel.run - INFO - Executing preprocess task on train_eval mode
+2021-07-28 07:52:48,373 - AirBnbModel.preprocess.run - INFO - User data loaded for preprocessing from data/train/staging/users.pkl
+2021-07-28 07:52:48,373 - AirBnbModel.preprocess.run - INFO - User key data properties have been validated
+2021-07-28 07:52:48,374 - AirBnbModel.preprocess.run - INFO - User data has been preprocessed
+2021-07-28 07:52:48,375 - AirBnbModel.preprocess.run - INFO - User data preprocessing finished, data saved on data/train/processed/X.pkl
+2021-07-28 07:52:48,388 - AirBnbModel.preprocess.run - INFO - target data loaded for validation from data/train/staging/target.pkl
+2021-07-28 07:52:48,389 - AirBnbModel.preprocess.run - INFO - Target key data properties have been validated
+2021-07-28 07:52:48,390 - AirBnbModel.preprocess.run - INFO - Target data preprocessing finished, data saved on data/train/processed/Y.pkl
+2021-07-28 08:22:46,047 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 08:22:46,048 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 08:22:46,049 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 08:22:46,059 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 08:22:46,066 - AirBnbModel.run - ERROR - Task model failed
+2021-07-28 08:25:46,368 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 08:25:46,368 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 08:25:46,369 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 08:25:46,370 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 08:25:46,719 - AirBnbModel.run - ERROR - Task model failed
+2021-07-28 08:26:17,981 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 08:26:17,981 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 08:26:17,982 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 08:26:17,983 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 08:26:18,425 - AirBnbModel.run - ERROR - Task model failed
+2021-07-28 09:02:04,885 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:02:06,980 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:02:10,088 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:02:10,089 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:02:10,090 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:02:10,096 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:02:10,460 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado', None, 2, None)
+2021-07-28 09:02:10,463 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:02:11,154 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:07:46,600 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:07:48,719 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:07:51,806 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:07:51,807 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:07:51,807 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:07:51,818 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:07:52,233 - AirBnbModel.run - ERROR - Task model failed
+2021-07-28 09:13:41,845 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:13:50,379 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:13:58,459 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:13:58,460 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:13:58,460 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:13:58,465 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:13:58,865 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado', None, 2, None)
+2021-07-28 09:13:58,869 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:13:59,569 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:20:12,179 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:20:14,268 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:20:17,374 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:20:17,375 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:20:17,376 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:20:17,377 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:20:17,715 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado', None, 2, None)
+2021-07-28 09:20:17,719 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:20:18,446 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:26:12,225 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:26:17,808 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:26:23,991 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:26:23,993 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:26:23,993 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:26:24,004 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:26:24,378 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado', None, 2, None)
+2021-07-28 09:26:24,383 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:26:28,130 - AirBnbModel.run - ERROR - Task model failed
+2021-07-28 09:27:15,299 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:27:17,378 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:27:21,475 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:27:21,475 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:27:21,476 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:27:21,478 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:27:22,282 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado', None, 2, None)
+2021-07-28 09:27:22,295 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:27:22,548 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:27:59,910 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:27:59,910 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:27:59,911 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:27:59,913 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:28:00,274 - AirBnbModel.run - ERROR - Task model failed
+2021-07-28 09:28:48,497 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:28:51,768 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:28:54,851 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:28:54,852 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:28:54,853 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:28:54,854 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:28:55,183 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado', None, 2, None)
+2021-07-28 09:28:55,185 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:28:55,916 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:36:02,683 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:36:13,103 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:36:19,211 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:36:19,213 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:36:19,213 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:36:19,222 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:36:19,586 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado', None, 2, None)
+2021-07-28 09:36:19,590 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:36:20,299 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:38:49,385 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:38:55,966 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:39:02,032 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:39:02,033 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:39:02,033 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:39:02,040 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:39:02,637 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado', None, 2, None)
+2021-07-28 09:39:02,638 - AirBnbModel.run - ERROR - Task model failed
+2021-07-28 09:42:36,725 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:42:46,334 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:42:56,443 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:42:56,451 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:42:56,455 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:42:56,462 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:42:56,902 - AirBnbModel.run - ERROR - Task model failed
+2021-07-28 09:47:03,797 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:47:34,686 - git.cmd - DEBUG - Popen(['git', 'version'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=None)
+2021-07-28 09:48:07,280 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-07-28 09:48:07,281 - AirBnbModel.model.run - INFO - Running training of the model
+2021-07-28 09:48:07,281 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-07-28 09:48:07,283 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-07-28 09:48:07,636 - git.util - DEBUG - Failed checking if running in CYGWIN due to: FileNotFoundError(2, 'El sistema no puede encontrar el archivo especificado', None, 2, None)
+2021-07-28 09:48:07,639 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-07-28 09:48:10,381 - git.cmd - DEBUG - Popen(['git', 'cat-file', '--batch-check'], cwd=C:\Users\Nico\Documents\Data Science\AirBnbModel, universal_newlines=False, shell=None, istream=<valid stream>)
+2021-08-01 21:43:27,065 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-08-01 21:43:27,065 - AirBnbModel.model.run - INFO - Running predictions
+2021-08-01 21:43:27,065 - AirBnbModel.model.predict - INFO - Loading training data data from data/predict/processed/users.pkl
+2021-08-01 21:43:27,065 - AirBnbModel.run - ERROR - Task model failed
+2021-08-01 21:44:25,060 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-08-01 21:44:25,061 - AirBnbModel.model.run - INFO - Running predictions
+2021-08-01 21:44:25,064 - AirBnbModel.model.predict - INFO - Loading training data data from data/predict/processed/X.pkl
+2021-08-01 21:44:25,071 - AirBnbModel.model.predict - INFO - Loading modoel from docs/models
+2021-08-01 21:44:25,071 - AirBnbModel.run - ERROR - Task model failed
+2021-08-01 21:45:14,803 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-08-01 21:45:14,805 - AirBnbModel.model.run - INFO - Running predictions
+2021-08-01 21:45:14,807 - AirBnbModel.model.predict - INFO - Loading training data data from data/predict/processed/X.pkl
+2021-08-01 21:45:14,809 - AirBnbModel.model.predict - INFO - Loading modoel from docs/models
+2021-08-01 21:45:14,810 - AirBnbModel.run - ERROR - Task model failed
+2021-08-01 21:47:05,811 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-08-01 21:47:05,811 - AirBnbModel.model.run - INFO - Running training of the model
+2021-08-01 21:47:05,811 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-08-01 21:47:05,811 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-08-01 21:47:45,261 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-08-01 21:47:45,262 - AirBnbModel.model.run - INFO - Running predictions
+2021-08-01 21:47:45,265 - AirBnbModel.model.predict - INFO - Loading training data data from data/predict/processed/X.pkl
+2021-08-01 21:47:45,267 - AirBnbModel.model.predict - INFO - Loading model from docs/modelsmodel.pkl
+2021-08-01 21:47:45,267 - AirBnbModel.run - ERROR - Task model failed
+2021-08-01 21:48:26,431 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-08-01 21:48:26,432 - AirBnbModel.model.run - INFO - Running predictions
+2021-08-01 21:48:26,434 - AirBnbModel.model.predict - INFO - Loading training data data from data/predict/processed/X.pkl
+2021-08-01 21:48:26,438 - AirBnbModel.model.predict - INFO - Loading model from docs/models.pkl
+2021-08-01 21:48:26,438 - AirBnbModel.run - ERROR - Task model failed
+2021-08-01 21:49:39,480 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-08-01 21:49:39,481 - AirBnbModel.model.run - INFO - Running predictions
+2021-08-01 21:49:39,483 - AirBnbModel.model.predict - INFO - Loading training data data from data/predict/processed/X.pkl
+2021-08-01 21:49:39,487 - AirBnbModel.model.predict - INFO - Loading model from docs/models/model.pkl
+2021-08-01 21:49:39,488 - AirBnbModel.run - ERROR - Task model failed
+2021-08-01 21:54:39,745 - AirBnbModel.run - INFO - Executing model task on train_eval mode
+2021-08-01 21:54:39,746 - AirBnbModel.model.run - INFO - Running training of the model
+2021-08-01 21:54:39,748 - AirBnbModel.model.train_eval - INFO - Loading training data data from data/train/processed/X.pkl
+2021-08-01 21:54:39,750 - AirBnbModel.model.train_eval - INFO - Loading training target data data from data/train/processed/Y.pkl
+2021-08-01 21:55:18,687 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-08-01 21:55:18,687 - AirBnbModel.model.run - INFO - Running predictions
+2021-08-01 21:55:18,689 - AirBnbModel.model.predict - INFO - Loading training data data from data/predict/processed/X.pkl
+2021-08-01 21:55:18,692 - AirBnbModel.model.predict - INFO - Loading model from docs/models/model.pkl
+2021-08-01 21:55:18,722 - AirBnbModel.run - ERROR - Task model failed
+2021-08-01 21:59:18,558 - AirBnbModel.run - INFO - Executing model task on predict mode
+2021-08-01 21:59:18,559 - AirBnbModel.model.run - INFO - Running predictions
+2021-08-01 21:59:18,564 - AirBnbModel.model.predict - INFO - Loading training data data from data/predict/processed/X.pkl
+2021-08-01 21:59:18,569 - AirBnbModel.model.predict - INFO - Loading model from docs/models/model.pkl
