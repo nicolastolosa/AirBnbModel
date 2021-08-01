@@ -1,13 +1,71 @@
 base:
   path:
-    data: "/shared/mydata.csv"
     logs: "logs"
-    log_config: "adv_ds_logging.yml"
-  rf_params:
-    n_estimators: 400
+    log_config: "configs/logging_config.yml"
 
-dev:
-  path_db: "sqlite:////some_dir/dev.db"
+
+source:
+  data:
+    train_eval:
+      users:
+        filepath_or_buffer: "data/train/source/users.csv"
+        usecols: ["user", "parameter1", "parameter2"]
+        index_col: ["user"]
+
+      target: 
+        filepath_or_buffer: "data/train/source/users.csv"
+        usecols: ["user", "target"]
+        index_col: ["user"]
+
+
+    predict:
+      users:
+        filepath_or_buffer: "data/predict/source/users.csv"
+        usecols: ["user", "parameter1", "parameter2"]
+        index_col: ["user"]
+    
+
+  params:
+    destination:
+      train_eval: 
+        users: "data/train/staging/users.pkl"
+        target: "data/train/staging/target.pkl"
+
+      predict: 
+        users: "data/predict/staging/users.pkl"
+        target: "data/predict/staging/target.pkl"
   
-prod:
-  path_db: "sqlite:////some_other_dir/prod.db"
+
+preprocess:
+  params:
+    destination:
+      train_eval:
+        X: "data/train/processed/X.pkl"
+        target: "data/train/processed/Y.pkl"
+      
+      predict:
+        X: "data/predict/processed/X.pkl"
+
+
+model:
+  train_eval:
+    data:
+      X_path: "data/train/processed/X.pkl"
+      Y_path: "data/train/processed/Y.pkl"
+    
+    params:
+      eval_score: "f1"
+      cv_folds: 2
+
+    save_dir: "docs/models"
+
+  predict:
+    data:
+      X_path: "data/predict/processed/X.pkl"
+
+    save_dir: "docs/models"
+
+
+
+  
+
