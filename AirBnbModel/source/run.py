@@ -1,72 +1,74 @@
-import os
+"""
+Contains the functions that define the execution of the 'source' task, which
+is responsible of extracting data from source database and loading it into
+a staging database, so it can be preprocessed.
+
+Functions on this script must be called from run.py on main package folder.
+
+Configuration parameters for this task can be found on configs/config.yml
+"""
 import logging
 
 import pandas as pd
 
-from AirBnbModel.config import cfg # Configuration file
-
+from AirBnbModel.config import cfg
 
 logger = logging.getLogger(__name__)
 
 
-def main(mode):
-    '''
-    Docstring
+def train_eval():
+    """
+    Defines the execution of the 'source' task on train_eval mode.
 
-    '''
+    This task extracts different tables containing training data and the target
+    variable and loads it into a staging database, prior to its preprocessing.
+    """
 
-
-    source_config: dict
     df: pd.DataFrame
     destination: str
 
+    # parameters to pass pd.to read_csv().
+    source_params: dict = cfg.source.data.train_eval
+    for dataset in source_params:
 
-    # dict containing the parameters of the files to extract to pass pd.to read_csv().
-    # Some metadata such as the path, depends on the execution mode (train/predict)
-    source_config = cfg.source.data[mode]    
-    for data in source_config:
-        
-        df = pd.read_csv(**source_config[data])
-        
-        logger.info(f"{df.shape[0]} rows and {df.shape[1]} colums loaded for {data} from {source_config[data]['filepath_or_buffer']}")
-        logger.debug(f"{data} dataset structure preview:\n{df.head(2)}")
+        df = pd.read_csv(**source_params[dataset])
 
+        logger.info(
+            f"""{df.shape[0]} rows and {df.shape[1]} colums loaded for
+            {dataset} from {source_params[dataset]['filepath_or_buffer']}"""
+        )
+        logger.debug(f"{dataset} dataset structure preview:\n{df.head(2)}")
 
-        destination = cfg.source.params.destination[mode][data]
+        destination = cfg.source.params.destination.train_eval[dataset]
         df.to_pickle(destination)
 
-        logger.info(f"{data} dataset saved on {destination}")
+        logger.info(f"{dataset} dataset saved on {destination}")
 
 
+def predict():
+    """
+    Defines the execution of the 'source' task on predict mode.
 
+    This task extracts different tables containing new data loads it into
+    a staging database, prior to its preprocessing.
+    """
 
+    df: pd.DataFrame
+    destination: str
 
-# def read_csv_from_dict(config: dict) -> pd.DataFrame:
-#     """Returns a pandas DataFrame object, passing the parameters given in 
-#        config dict to pandas.read_csv() function.
+    # parameters to pass pd.to read_csv().
+    source_params: dict = cfg.source.data.predict
+    for dataset in source_params:
 
-#     Parameters
-#     ----------
-#     config
-#         Python dict object containing the arguments that should be given to
-#         pandas.read_csv().
-    
-#     Examples
-#     --------
-#     Extract a pandas DataFrame object located in 'filepath_or_buffer'.
-#     Only 'usecols' columns are selected and 'index_col' column is used as index.
+        df = pd.read_csv(**source_params[dataset])
 
-#     >>> read_csv_from_dict(config = {
-#         'filepath_or_buffer'='folder/data.csv',
-#         'usecols':['column1','column2'],
-#         'index_col':['index_column']})
+        logger.info(
+            f"""{df.shape[0]} rows and {df.shape[1]} colums loaded for
+             {dataset} from {source_params[dataset]['filepath_or_buffer']}"""
+        )
+        logger.debug(f"{dataset} dataset structure preview:\n{df.head(2)}")
 
-#     """
+        destination = cfg.source.params.destination.predict[dataset]
+        df.to_pickle(destination)
 
-
-#     sig = inspect.signature(pd.read_csv)
-#     param_list = [param.name for param in sig.parameters.values()]
-#     print(param_list)
-    
-
-
+        logger.info(f"{dataset} dataset saved on {destination}")
