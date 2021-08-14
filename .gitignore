@@ -1,10 +1,12 @@
-# vscode configuration
-.vscode/
-
 # Data not included due to license limitations
 notebooks/exploration_data/*
 data/*
 
+# vscode configuration
+.vscode/
+
+# interrogate badge
+interrogate_badge.svg
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
