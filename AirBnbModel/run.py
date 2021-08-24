@@ -17,12 +17,12 @@ from AirBnbModel.source.run import train_eval as source_train_eval
 
 logger = logging.getLogger(__name__)
 
-tasks = {
+tasks: dict = {
     "source": {"train_eval": source_train_eval, "predict": source_predict},
     "preprocess": {"train_eval": preprocess_train_eval, "predict": preprocess_predict},
     "model": {"train_eval": model_train_eval, "predict": model_predict},
 }
-mode = ["train_eval", "predict"]
+mode: list = ["train_eval", "predict"]
 
 
 def main(task: str, mode: str):
@@ -53,7 +53,6 @@ def main(task: str, mode: str):
     Read preprocessed training data and use it to train a classification model:
 
     >>> main('model', 'train_eval')
-
     """
 
     try:
@@ -67,7 +66,7 @@ def main(task: str, mode: str):
 @click.command()
 @click.option(
     "--task",
-    type=click.Choice(tasks.keys()),
+    type=click.Choice(list(tasks.keys())),
     required=True,
     help="Name of task to execute",
 )
@@ -78,4 +77,11 @@ def main(task: str, mode: str):
     help="Mode of execution of the task",
 )
 def main_cli(task: str, mode: str):
+    """
+    Calls main() function. This function is weapped with CLI, so it can be
+    passed with arguments from command line.
+
+    main() and main_cli() are sepparated as main_cli() cannot be imported due
+    to CLI decorators.
+    """
     main(task, mode)
