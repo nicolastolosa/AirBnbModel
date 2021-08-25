@@ -58,7 +58,7 @@ def main(task: str, mode: str):
     try:
         logger.info(f"Executing {task} task on {mode} mode")
         tasks[task][mode]()
-    except SystemError:
+    except Exception:
         logger.error(f"Task {task} failed")
         raise
 

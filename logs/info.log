@@ -16,3 +16,125 @@
 2021-08-10 13:51:39,564 - numexpr.utils - INFO - NumExpr defaulting to 4 threads.
 2021-08-10 14:04:00,511 - numexpr.utils - INFO - NumExpr defaulting to 4 threads.
 2021-08-10 15:43:36,985 - numexpr.utils - INFO - NumExpr defaulting to 4 threads.
+2021-08-25 07:36:04,092 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 07:36:04,127 - AirBnbModel.source.run - INFO - Connection to kaggle API succesful
+2021-08-25 07:39:16,931 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 07:39:17,163 - AirBnbModel.source.run - ERROR - Connection failed
+2021-08-25 07:41:04,467 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 07:41:04,699 - AirBnbModel.source.run - ERROR - Connection failed
+2021-08-25 07:41:04,700 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 07:43:06,972 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 07:43:07,198 - AirBnbModel.source.run - ERROR - Connection failed
+2021-08-25 07:49:39,226 - AirBnbModel.source.run - ERROR - Connection failed
+2021-08-25 07:49:39,232 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 07:49:39,236 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 07:51:35,197 - AirBnbModel.source.run - ERROR - Connection failed
+2021-08-25 07:51:35,202 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 07:51:35,203 - AirBnbModel.source.run - ERROR - kaggle package has not been imported
+2021-08-25 07:53:34,311 - AirBnbModel.source.run - ERROR - Connection failed: Could not find kaggle.json. Make sure it's located in C:\Users\Nico\.kaggle. Or use the environment method.
+2021-08-25 07:53:34,317 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 07:53:34,318 - AirBnbModel.source.run - ERROR - kaggle package has not been imported
+2021-08-25 07:57:49,049 - AirBnbModel.source.run - ERROR - Connection failed: Could not find kaggle.json. Make sure it's located in C:\Users\Nico\.kaggle. Or use the environment method.
+2021-08-25 07:57:49,051 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 07:57:49,052 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 07:59:04,457 - AirBnbModel.source.run - ERROR - Connection failed: Could not find kaggle.json. Make sure it's located in C:\Users\Nico\.kaggle. Or use the environment method.
+2021-08-25 07:59:04,460 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 07:59:04,461 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 08:00:16,994 - AirBnbModel.source.run - ERROR - Connection failed:
+2021-08-25 08:00:16,996 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 08:00:16,996 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 08:01:39,138 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 08:05:12,840 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 08:05:13,148 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 08:05:48,190 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 08:05:55,759 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 08:07:21,198 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 08:07:22,643 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 08:07:22,667 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 08:08:01,145 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 08:08:01,886 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 08:08:02,382 - AirBnbModel.source.run - INFO - main zip file extracted
+2021-08-25 08:52:44,149 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 08:52:50,864 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 08:55:20,583 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 08:55:21,338 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 08:55:21,797 - AirBnbModel.source.run - INFO - main zip file extracted
+2021-08-25 09:00:19,808 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:04:40,002 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:04:50,399 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:04:50,764 - AirBnbModel.source.run - INFO - main zip file extracted
+2021-08-25 09:04:51,007 - AirBnbModel.source.run - INFO - train_users_2.csv.zip extracted in data/train/source/temp
+2021-08-25 09:04:54,687 - AirBnbModel.source.run - INFO - sessions.csv.zip extracted in data/train/source/temp
+2021-08-25 09:19:35,069 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:19:40,265 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:19:40,303 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 09:20:31,788 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:20:32,555 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:20:32,572 - AirBnbModel.source.run - ERROR - ERROR
+2021-08-25 09:27:17,710 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:27:19,103 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:27:19,110 - AirBnbModel.source.run - ERROR - ERROR
+2021-08-25 09:27:19,113 - AirBnbModel.source.run - INFO - Temporary folder data/train/source/temp deleted
+2021-08-25 09:31:08,923 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:31:12,532 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:31:12,552 - AirBnbModel.source.run - ERROR - ERROR
+2021-08-25 09:31:12,566 - AirBnbModel.source.run - INFO - Temporary folder data/train/source/temp deleted
+2021-08-25 09:33:00,785 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:33:04,039 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:33:04,059 - AirBnbModel.source.run - INFO - Temporary folder data/train/source/temp deleted
+2021-08-25 09:33:04,061 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 09:34:16,882 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:34:19,905 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:34:19,921 - AirBnbModel.source.run - ERROR - ERROR: "There is no item named 'train_users_2.csv' in the archive"
+2021-08-25 09:34:19,932 - AirBnbModel.source.run - INFO - Temporary folder data/train/source/temp deleted
+2021-08-25 09:35:02,878 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:35:07,042 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:35:07,054 - AirBnbModel.source.run - ERROR - ERROR: "There is no item named 'train_users_2.csv' in the archive"
+2021-08-25 09:35:07,055 - AirBnbModel.source.run - INFO - Temporary folder data/train/source/temp deleted
+2021-08-25 09:37:48,793 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:37:49,733 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:37:49,736 - AirBnbModel.source.run - ERROR - ERROR: "There is no item named 'train_users_2.csv' in the archive"
+2021-08-25 09:37:49,737 - AirBnbModel.source.run - INFO - Temporary folder data/train/source/temp deleted
+2021-08-25 09:38:30,957 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:38:31,832 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:38:31,832 - AirBnbModel.source.run - ERROR - ERROR: "There is no item named 'train_users_2.csv' in the archive"
+2021-08-25 09:42:38,139 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:42:38,858 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:42:39,229 - AirBnbModel.source.run - INFO - main zip file extracted
+2021-08-25 09:42:39,401 - AirBnbModel.source.run - INFO - train_users_2.csv.zip extracted in data/train/source/temp
+2021-08-25 09:42:45,777 - AirBnbModel.source.run - INFO - sessions.csv.zip extracted in data/train/source/temp
+2021-08-25 09:42:47,183 - AirBnbModel.source.run - ERROR - ERROR: [Errno 2] No such file or directory: 'sessions.csv'
+2021-08-25 09:43:49,021 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:43:52,286 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:43:52,661 - AirBnbModel.source.run - INFO - main zip file extracted
+2021-08-25 09:43:52,849 - AirBnbModel.source.run - INFO - train_users_2.csv.zip extracted in data/train/source/temp
+2021-08-25 09:43:56,967 - AirBnbModel.source.run - INFO - sessions.csv.zip extracted in data/train/source/temp
+2021-08-25 09:43:57,667 - AirBnbModel.source.run - INFO - users dataset loaded
+2021-08-25 09:44:13,110 - AirBnbModel.source.run - INFO - sessions dataset loaded
+2021-08-25 09:45:11,277 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:45:14,426 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:45:15,100 - AirBnbModel.source.run - INFO - main zip file extracted
+2021-08-25 09:45:15,287 - AirBnbModel.source.run - INFO - train_users_2.csv.zip extracted in data/train/source/temp
+2021-08-25 09:45:18,719 - AirBnbModel.source.run - INFO - sessions.csv.zip extracted in data/train/source/temp
+2021-08-25 09:45:20,054 - AirBnbModel.source.run - INFO - users dataset loaded
+2021-08-25 09:45:31,673 - AirBnbModel.source.run - INFO - sessions dataset loaded
+2021-08-25 09:45:31,674 - AirBnbModel.source.run - INFO - Temporary folder data/train/source/temp deleted
+2021-08-25 09:48:13,573 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:48:16,556 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:48:16,941 - AirBnbModel.source.run - INFO - main zip file extracted
+2021-08-25 09:48:17,130 - AirBnbModel.source.run - INFO - train_users_2.csv.zip extracted in data/train/source/temp
+2021-08-25 09:48:20,993 - AirBnbModel.source.run - INFO - sessions.csv.zip extracted in data/train/source/temp
+2021-08-25 09:48:21,801 - AirBnbModel.source.run - INFO - users dataset loaded
+2021-08-25 09:48:35,270 - AirBnbModel.source.run - INFO - sessions dataset loaded
+2021-08-25 09:48:35,310 - AirBnbModel.source.run - INFO - Temporary folder data/train/source/temp deleted
+2021-08-25 09:48:35,327 - AirBnbModel.run - ERROR - Task source failed
+2021-08-25 09:49:47,865 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-25 09:49:54,113 - AirBnbModel.source.run - INFO - Data downloaded in data/train/source/temp
+2021-08-25 09:49:54,457 - AirBnbModel.source.run - INFO - main zip file extracted
+2021-08-25 09:49:54,629 - AirBnbModel.source.run - INFO - train_users_2.csv.zip extracted in data/train/source/temp
+2021-08-25 09:49:58,256 - AirBnbModel.source.run - INFO - sessions.csv.zip extracted in data/train/source/temp
+2021-08-25 09:49:58,944 - AirBnbModel.source.run - INFO - users dataset loaded
+2021-08-25 09:50:10,014 - AirBnbModel.source.run - INFO - sessions dataset loaded
+2021-08-25 09:50:10,058 - AirBnbModel.source.run - INFO - Temporary folder data/train/source/temp deleted
+2021-08-25 09:50:11,769 - AirBnbModel.source.run - INFO - users dataset stored in data/train/source\users.csv
+2021-08-25 09:51:03,940 - AirBnbModel.source.run - INFO - sessions dataset stored in data/train/source\sessions.csv
