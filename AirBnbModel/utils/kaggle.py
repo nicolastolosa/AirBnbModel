@@ -58,7 +58,7 @@ class CompetitionAPI:
         self.api.authenticate()
         self.competition_name = competition_name
 
-    def read_csv(self, filename: str) -> pd.DataFrame:
+    def read_csv(self, filename: str, **kwargs) -> pd.DataFrame:
         """
         Reads comma-separated values (csv) dataset from Kaggle competition
         into a pandas DataFrame.
@@ -69,6 +69,9 @@ class CompetitionAPI:
             name of the .csv file to return. Se
             :func:`~CompetitionAPI.download_dataset` method's documentation
             for specifications on the format.
+
+            **kwargs
+                additional arguments passed to pandas.read_csv() method.
 
         Returns
         ----------
@@ -106,7 +109,7 @@ class CompetitionAPI:
 
             # read csv
             csv_filepath = os.path.join(tmpdir, filename)
-            df = pd.read_csv(csv_filepath)
+            df = pd.read_csv(csv_filepath, **kwargs)
 
         return df
 
