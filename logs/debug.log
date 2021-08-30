@@ -30,3 +30,104 @@
 2021-08-26 10:31:39,358 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded
 2021-08-26 10:31:40,231 - AirBnbModel.utils.kaggle - INFO - Downloading sessions.csv.zip from airbnb-recruiting-new-user-bookings Kaggle competition
 2021-08-26 10:31:43,788 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded
+2021-08-30 07:06:44,388 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:06:45,782 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:06:50,314 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:07:11,220 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:08:00,769 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:08:01,796 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:08:05,237 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:08:22,494 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:17:31,949 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:17:32,946 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:17:36,507 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:17:54,030 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:19:58,118 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:19:59,059 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:20:02,278 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:20:19,100 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:21:09,941 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:21:10,964 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:21:14,472 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:21:32,873 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:22:39,276 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:22:40,246 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:22:43,598 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:23:02,723 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:23:54,585 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:23:55,505 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:23:58,998 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:24:29,002 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:25:07,321 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:25:08,260 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:25:11,995 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:25:29,265 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:26:06,405 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:26:07,280 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:26:10,628 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:26:34,679 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:27:35,417 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:27:36,418 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:27:40,032 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:28:01,560 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:29:15,059 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:29:16,095 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:29:19,653 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:29:48,691 - AirBnbModel.source.run - INFO - Preparing data to train_test_split
+2021-08-30 07:29:50,273 - AirBnbModel.source.run - INFO - Splitting data into train and test datasets
+2021-08-30 07:29:52,458 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:31:06,272 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:31:07,182 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:31:10,743 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:31:26,831 - AirBnbModel.source.run - INFO - Preparing data to train_test_split
+2021-08-30 07:31:28,238 - AirBnbModel.source.run - INFO - Splitting data into train and test datasets. Test size: 0.2% of users
+2021-08-30 07:31:46,781 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:32:20,934 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:32:21,915 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:32:25,391 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:32:43,001 - AirBnbModel.source.run - INFO - Preparing data to train_test_split
+2021-08-30 07:32:44,329 - AirBnbModel.source.run - INFO - Splitting data into train and test datasets. Test size: 0.2% of users
+2021-08-30 07:38:31,379 - AirBnbModel.run - INFO - Executing source task on train_eval mode
+2021-08-30 07:38:32,319 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:38:35,870 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:38:52,097 - AirBnbModel.source.run - INFO - Preparing data to train_test_split
+2021-08-30 07:38:53,538 - AirBnbModel.source.run - INFO - Splitting data into train and test datasets. Test size: 0.2
+2021-08-30 07:40:47,382 - AirBnbModel.run - INFO - Running source task on predict mode
+2021-08-30 07:40:48,657 - AirBnbModel.utils.kaggle - INFO - test_users.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:40:51,667 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:41:08,823 - AirBnbModel.source.run - INFO - Preparing data to train_test_split
+2021-08-30 07:41:08,828 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:42:07,934 - AirBnbModel.run - INFO - Running source task on predict mode
+2021-08-30 07:42:08,767 - AirBnbModel.utils.kaggle - INFO - test_users.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:42:11,731 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:42:33,273 - AirBnbModel.source.run - INFO - Preparing data to train_test_split
+2021-08-30 07:42:35,553 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:43:49,012 - AirBnbModel.run - INFO - Running source task on predict mode
+2021-08-30 07:43:49,929 - AirBnbModel.utils.kaggle - INFO - test_users.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:43:52,892 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:44:11,172 - AirBnbModel.source.run - INFO - Preparing data to train_test_split
+2021-08-30 07:44:18,926 - AirBnbModel.run - ERROR - Task source failed
+2021-08-30 07:45:17,112 - AirBnbModel.run - INFO - Running source task on predict mode
+2021-08-30 07:45:17,969 - AirBnbModel.utils.kaggle - INFO - test_users.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:45:20,893 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:45:56,235 - AirBnbModel.source.run - INFO - Data saved into: data/predict/source
+2021-08-30 07:46:23,126 - AirBnbModel.run - INFO - Running source task on train_eval mode
+2021-08-30 07:46:24,083 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:46:27,770 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 07:46:43,073 - AirBnbModel.source.run - INFO - Preparing data to train_test_split
+2021-08-30 07:46:44,622 - AirBnbModel.source.run - INFO - Splitting data into train and test datasets. Test size: 0.2
+2021-08-30 07:47:05,312 - AirBnbModel.source.run - INFO - Training data saved into: data/train/source
+2021-08-30 07:47:27,841 - AirBnbModel.source.run - INFO - Test data saved into: data/train/source
+2021-08-30 08:05:19,090 - AirBnbModel.run - INFO - Running source task on train_eval mode
+2021-08-30 08:05:19,098 - AirBnbModel.source.run - INFO - Getting datasets from Kaggle competition API
+2021-08-30 08:05:20,344 - AirBnbModel.utils.kaggle - INFO - train_users_2.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 08:05:24,462 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 08:05:41,979 - AirBnbModel.source.run - INFO - Preparing data to train_test_split
+2021-08-30 08:05:43,478 - AirBnbModel.source.run - INFO - Splitting data into train and test datasets. Test size: 0.2
+2021-08-30 08:06:01,686 - AirBnbModel.source.run - INFO - Training data saved into: data/train/source
+2021-08-30 08:06:17,181 - AirBnbModel.source.run - INFO - Test data saved into: data/train/source
+2021-08-30 08:06:45,111 - AirBnbModel.run - INFO - Running source task on predict mode
+2021-08-30 08:06:45,118 - AirBnbModel.source.run - INFO - Getting datasets from Kaggle competition API
+2021-08-30 08:06:46,278 - AirBnbModel.utils.kaggle - INFO - test_users.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 08:06:49,399 - AirBnbModel.utils.kaggle - INFO - sessions.csv.zip succesfully downloaded from airbnb-recruiting-new-user-bookings Kaggle competition
+2021-08-30 08:07:24,609 - AirBnbModel.source.run - INFO - Data saved into: data/predict/source

@@ -11,8 +11,9 @@ import logging
 import os
 
 import pandas as pd
+from sklearn.model_selection import train_test_split
 
-from AirBnbModel.config import cfg
+# from AirBnbModel.config import cfg
 from AirBnbModel.utils import kaggle
 
 logger = logging.getLogger(__name__)
@@ -36,23 +37,69 @@ def train_eval():
     # Extract data from source
     source = kaggle.CompetitionAPI(competition_name=COMPETITION_NAME)
 
-    users = source.read_csv(filename="train_users_2.csv")
-    sessions = source.read_csv(filename="sessions.csv")
+    logger.info("Getting datasets from Kaggle competition API")
+    users = source.read_csv(filename="train_users_2.csv", index_col="id")  # PARAMETRO
+    sessions = source.read_csv(
+        filename="sessions.csv", index_col="user_id"
+    )  # PARAMETRO
 
-    # sessions.get_unique_IDs()
+    # Get unique user_id from both datasets before train_test_split().
+    logger.info("Preparing data to train_test_split")
+    cols = ["country_destination"]  # PARAMETRO
+    users_unique_notnull_ids = (
+        users[cols]
+        .query("index.unique()", engine="python")
+        .query("index.notnull()", engine="python")
+        .rename_axis(index="user_id")  # PARAMETRO
+    )
 
-    # users.get_unique_IDs()
+    sessions_unique_notnull_ids = pd.Series(
+        sessions.index.unique().dropna().rename("user_id")  # PARAMETRO
+    )
 
-    # merge_datasets()
+    valid_ids = pd.merge(
+        left=users_unique_notnull_ids,
+        right=sessions_unique_notnull_ids,
+        how="inner",
+        on="user_id",
+    )
 
-    # train_test_split()
+    # train_test_split
+    TEST_SIZE = 0.2  # PARAMETRO
+    logger.info(f"Splitting data into train and test datasets. Test size: {TEST_SIZE}")
+    id_train, id_test = train_test_split(
+        valid_ids.user_id,
+        test_size=TEST_SIZE,
+        stratify=valid_ids.country_destination,
+        random_state=42,
+    )
+
+    users_train = users[users.index.isin(id_train)]
+    users_test = users[users.index.isin(id_test)]
+
+    sessions_train = sessions[sessions.index.isin(id_train)]
+    sessions_test = sessions[sessions.index.isin(id_train)]
 
     # store_data
+    os.makedirs(DESTINATION_PATH, exist_ok=True)
     users_destination = os.path.join(DESTINATION_PATH, "users.csv")
-    users.to_csv(users_destination, index=False)
+    users_train.to_csv(users_destination, index=False)
 
     sessions_destination = os.path.join(DESTINATION_PATH, "sessions.csv")
-    sessions.to_csv(sessions_destination, index=False)
+    sessions_train.to_csv(sessions_destination, index=False)
+
+    logger.info(f"Training data saved into: {DESTINATION_PATH}")
+
+    TEST_PATH = os.path.join(DESTINATION_PATH, "test")
+    os.makedirs(TEST_PATH, exist_ok=True)
+
+    users_destination = os.path.join(TEST_PATH, "users.csv")
+    users_test.to_csv(users_destination, index=False)
+
+    sessions_destination = os.path.join(TEST_PATH, "sessions.csv")
+    sessions_test.to_csv(sessions_destination, index=False)
+
+    logger.info(f"Test data saved into: {DESTINATION_PATH}")
 
 
 def predict():
@@ -63,22 +110,47 @@ def predict():
     a staging database, prior to its preprocessing.
     """
 
-    df: pd.DataFrame
-    destination: str
+    # Variable declaration
+    COMPETITION_NAME: str = "airbnb-recruiting-new-user-bookings"
+    DESTINATION_PATH: str = "data/predict/source"
 
-    # parameters to pass pd.to read_csv().
-    source_params: dict = cfg.source.data.predict
-    for dataset in source_params:
+    users: pd.DataFrame
+    sessions: pd.DataFrame
 
-        df = pd.read_csv(**source_params[dataset])
+    # Extract data from source
+    source = kaggle.CompetitionAPI(competition_name=COMPETITION_NAME)
 
-        logger.info(
-            f"""{df.shape[0]} rows and {df.shape[1]} colums loaded for
-             {dataset} from {source_params[dataset]['filepath_or_buffer']}"""
-        )
-        logger.debug(f"{dataset} dataset structure preview:\n{df.head(2)}")
+    logger.info("Getting datasets from Kaggle competition API")
+    users = source.read_csv(filename="test_users.csv", index_col="id")  # PARAMETRO
+    sessions = source.read_csv(
+        filename="sessions.csv", index_col="user_id"
+    )  # PARAMETRO
 
-        destination = cfg.source.params.destination.predict[dataset]
-        df.to_pickle(destination)
+    # Get unique user_id from both datasets.
+    users_unique_notnull_ids = pd.Series(
+        users.index.unique().dropna().rename("user_id")
+    )
 
-        logger.info(f"{dataset} dataset saved on {destination}")
+    sessions_unique_notnull_ids = pd.Series(
+        sessions.index.unique().dropna().rename("user_id")  # PARAMETRO
+    )
+
+    valid_ids = pd.merge(
+        left=users_unique_notnull_ids,
+        right=sessions_unique_notnull_ids,
+        how="inner",
+        on="user_id",
+    ).user_id
+
+    users = users[users.index.isin(valid_ids)]
+    sessions = sessions[sessions.index.isin(valid_ids)]
+
+    # store_data
+    os.makedirs(DESTINATION_PATH, exist_ok=True)
+    users_destination = os.path.join(DESTINATION_PATH, "users.csv")
+    users.to_csv(users_destination, index=False)
+
+    sessions_destination = os.path.join(DESTINATION_PATH, "sessions.csv")
+    sessions.to_csv(sessions_destination, index=False)
+
+    logger.info(f"Data saved into: {DESTINATION_PATH}")
