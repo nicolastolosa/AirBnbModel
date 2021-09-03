@@ -2,8 +2,8 @@
 Notebooks_TFM/
 
 # Data not included due to license limitations
-notebooks/exploration_data/*
-data/*
+notebooks/exploration_data/
+data
 
 # vscode configuration
 .vscode/

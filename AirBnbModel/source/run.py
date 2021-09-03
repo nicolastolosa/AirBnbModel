@@ -13,7 +13,7 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-# from AirBnbModel.config import cfg
+from AirBnbModel.source.processing import intersect_index
 from AirBnbModel.utils import kaggle
 
 logger = logging.getLogger(__name__)
@@ -24,82 +24,66 @@ def train_eval():
     Defines the execution of the 'source' task on train_eval mode.
 
     This task extracts different tables containing training data and the target
-    variable and loads it into a staging database, prior to its preprocessing.
+    variable and loads it into a staging database, before to its preprocessing.
     """
 
     # Variable declaration
     COMPETITION_NAME: str = "airbnb-recruiting-new-user-bookings"
-    DESTINATION_PATH: str = "data/train/source"
+    TRAIN_PATH: str = "data/train/source"
+    TEST_PATH: str = "data/test/source"
 
     users: pd.DataFrame
     sessions: pd.DataFrame
 
     # Extract data from source
+    logger.info("Getting datasets from Kaggle competition API")
+
     source = kaggle.CompetitionAPI(competition_name=COMPETITION_NAME)
 
-    logger.info("Getting datasets from Kaggle competition API")
-    users = source.read_csv(filename="train_users_2.csv", index_col="id")  # PARAMETRO
-    sessions = source.read_csv(
-        filename="sessions.csv", index_col="user_id"
-    )  # PARAMETRO
+    users = source.read_csv(filename="train_users_2.csv", index_col="id")
+    sessions = source.read_csv(filename="sessions.csv", index_col="user_id")
 
     # Get unique user_id from both datasets before train_test_split().
     logger.info("Preparing data to train_test_split")
-    cols = ["country_destination"]  # PARAMETRO
-    users_unique_notnull_ids = (
-        users[cols]
-        .query("index.unique()", engine="python")
-        .query("index.notnull()", engine="python")
-        .rename_axis(index="user_id")  # PARAMETRO
-    )
 
-    sessions_unique_notnull_ids = pd.Series(
-        sessions.index.unique().dropna().rename("user_id")  # PARAMETRO
-    )
+    # valid_ids = join_on_unique_index(users, sessions)
 
-    valid_ids = pd.merge(
-        left=users_unique_notnull_ids,
-        right=sessions_unique_notnull_ids,
-        how="inner",
-        on="user_id",
-    )
+    valid_ids = intersect_index(users, sessions)
 
     # train_test_split
+    target = ["country_destination"]  # PARAMETRO
     TEST_SIZE = 0.2  # PARAMETRO
-    logger.info(f"Splitting data into train and test datasets. Test size: {TEST_SIZE}")
+
+    logger.info(
+        "Splitting data into train and test datasets." f"Test size: {TEST_SIZE}"
+    )
+
     id_train, id_test = train_test_split(
-        valid_ids.user_id,
+        valid_ids,
         test_size=TEST_SIZE,
-        stratify=valid_ids.country_destination,
+        stratify=users.loc[valid_ids, target],
         random_state=42,
     )
 
-    users_train = users[users.index.isin(id_train)]
-    users_test = users[users.index.isin(id_test)]
+    users_train = users.loc[id_train, :]
+    users_test = users.loc[id_test, :]
 
-    sessions_train = sessions[sessions.index.isin(id_train)]
-    sessions_test = sessions[sessions.index.isin(id_train)]
+    sessions_train = sessions.loc[id_train, :]
+    sessions_test = sessions.loc[id_test, :]
 
-    # store_data
-    os.makedirs(DESTINATION_PATH, exist_ok=True)
-    users_destination = os.path.join(DESTINATION_PATH, "users.csv")
-    users_train.to_csv(users_destination, index=False)
+    # store training data
+    os.makedirs(TRAIN_PATH, exist_ok=True)
 
-    sessions_destination = os.path.join(DESTINATION_PATH, "sessions.csv")
-    sessions_train.to_csv(sessions_destination, index=False)
+    users_train.to_csv(TRAIN_PATH + "/users.csv", index=False)
+    sessions_train.to_csv(TRAIN_PATH + "/sessions.csv", index=False)
+    logger.info(f"Training data saved into: {TRAIN_PATH}")
 
-    logger.info(f"Training data saved into: {DESTINATION_PATH}")
-
-    TEST_PATH = os.path.join(DESTINATION_PATH, "test")
+    # store test data
     os.makedirs(TEST_PATH, exist_ok=True)
 
-    users_destination = os.path.join(TEST_PATH, "users.csv")
-    users_test.to_csv(users_destination, index=False)
-
-    sessions_destination = os.path.join(TEST_PATH, "sessions.csv")
-    sessions_test.to_csv(sessions_destination, index=False)
-
-    logger.info(f"Test data saved into: {DESTINATION_PATH}")
+    users_test.to_csv(TEST_PATH + "/users.csv", index=False)
+    sessions_test.to_csv(TEST_PATH + "/sessions.csv", index=False)
+    logger.info(f"Test data saved into: {TEST_PATH}")
 
 
 def predict():
@@ -118,39 +102,22 @@ def predict():
     sessions: pd.DataFrame
 
     # Extract data from source
-    source = kaggle.CompetitionAPI(competition_name=COMPETITION_NAME)
-
     logger.info("Getting datasets from Kaggle competition API")
-    users = source.read_csv(filename="test_users.csv", index_col="id")  # PARAMETRO
-    sessions = source.read_csv(
-        filename="sessions.csv", index_col="user_id"
-    )  # PARAMETRO
 
-    # Get unique user_id from both datasets.
-    users_unique_notnull_ids = pd.Series(
-        users.index.unique().dropna().rename("user_id")
-    )
+    source = kaggle.CompetitionAPI(competition_name=COMPETITION_NAME)
+    # FALTAN PARAMETROS
+    users = source.read_csv(filename="test_users.csv", index_col="id")
+    sessions = source.read_csv(filename="sessions.csv", index_col="user_id")
 
-    sessions_unique_notnull_ids = pd.Series(
-        sessions.index.unique().dropna().rename("user_id")  # PARAMETRO
-    )
+    # Valid users are those available in both users and sessions datasets.
+    valid_ids = intersect_index(users, sessions)
 
-    valid_ids = pd.merge(
-        left=users_unique_notnull_ids,
-        right=sessions_unique_notnull_ids,
-        how="inner",
-        on="user_id",
-    ).user_id
-
-    users = users[users.index.isin(valid_ids)]
-    sessions = sessions[sessions.index.isin(valid_ids)]
+    users_valid = users.loc[valid_ids, :]
+    sessions_valid = sessions.loc[valid_ids, :]
 
     # store_data
     os.makedirs(DESTINATION_PATH, exist_ok=True)
-    users_destination = os.path.join(DESTINATION_PATH, "users.csv")
-    users.to_csv(users_destination, index=False)
 
-    sessions_destination = os.path.join(DESTINATION_PATH, "sessions.csv")
-    sessions.to_csv(sessions_destination, index=False)
-
+    users_valid.to_csv(DESTINATION_PATH + "/users.csv", index=False)
+    sessions_valid.to_csv(DESTINATION_PATH + "/sessions.csv", index=False)
     logger.info(f"Data saved into: {DESTINATION_PATH}")
