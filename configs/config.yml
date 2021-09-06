@@ -5,35 +5,40 @@ base:
 
 
 source:
+  competition_name: "airbnb-recruiting-new-user-bookings"
+  destination_path: 
+    train: "data/train/source"
+    test: "data/test/source"
+    predict: "data/predict/source"
+  params: 
+    test_size: 0.2
+    target: "country_destination"
+
   data:
-    train_eval:
+    users:
+      filename: 
+        train_eval: "train_users_2.csv"
+        predict: "test_users_2.csv"
+      id_col: "id"
+
+    sessions:
+      filename: 
+        train_eval: "sessions.csv"
+        predict: "sessions.csv"
+      id_col: "user_id"
+
+
+  predict:
+    data:
+      path: 
       users:
-        filepath_or_buffer: "data/train/source/users.csv"
-        usecols: ["user", "parameter1", "parameter2"]
-        index_col: ["user"]
+        source_name: 
+        user_id_col: "id"
 
-      target: 
-        filepath_or_buffer: "data/train/source/users.csv"
-        usecols: ["user", "target"]
-        index_col: ["user"]
-
-
-    predict:
-      users:
-        filepath_or_buffer: "data/predict/source/users.csv"
-        usecols: ["user", "parameter1", "parameter2"]
-        index_col: ["user"]
+      sessions:
+        source_name: "sessions.csv"
+        user_id_col: "user_id"
     
-
-  params:
-    destination:
-      train_eval: 
-        users: "data/train/staging/users.pkl"
-        target: "data/train/staging/target.pkl"
-
-      predict: 
-        users: "data/predict/staging/users.pkl"
-        target: "data/predict/staging/target.pkl"
   
 
 preprocess:

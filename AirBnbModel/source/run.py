@@ -13,6 +13,7 @@ import os
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
+from AirBnbModel.config import cfg
 from AirBnbModel.source.processing import intersect_index
 from AirBnbModel.utils import kaggle
 
@@ -27,32 +28,35 @@ def train_eval():
     variable and loads it into a staging database, before to its preprocessing.
     """
 
-    # Variable declaration
-    COMPETITION_NAME: str = "airbnb-recruiting-new-user-bookings"
-    TRAIN_PATH: str = "data/train/source"
-    TEST_PATH: str = "data/test/source"
-
-    users: pd.DataFrame
-    sessions: pd.DataFrame
-
     # Extract data from source
     logger.info("Getting datasets from Kaggle competition API")
 
+    COMPETITION_NAME: str = cfg.source.competition_name
     source = kaggle.CompetitionAPI(competition_name=COMPETITION_NAME)
 
-    users = source.read_csv(filename="train_users_2.csv", index_col="id")
-    sessions = source.read_csv(filename="sessions.csv", index_col="user_id")
+    users: pd.DataFrame
+    sessions: pd.DataFrame
+    users = source.read_csv(
+        filename=cfg.source.data.users.filename.train_eval,
+        index_col=cfg.source.data.users.id_col,
+    )
+    sessions = source.read_csv(
+        filename=cfg.source.data.sessions.filename.train_eval,
+        index_col=cfg.source.data.sessions.id_col,
+    )
 
     # Get unique user_id from both datasets before train_test_split().
     logger.info("Preparing data to train_test_split")
 
-    # valid_ids = join_on_unique_index(users, sessions)
-
     valid_ids = intersect_index(users, sessions)
+    not_valid_ids = users[~(users.index.isin(valid_ids))]
+    logger.warning(
+        f"{len(not_valid_ids)} users from sessions not found in" " users dataset"
+    )
 
     # train_test_split
-    target = ["country_destination"]  # PARAMETRO
-    TEST_SIZE = 0.2  # PARAMETRO
+    target = cfg.source.params.target
+    TEST_SIZE = cfg.source.params.test_size
 
     logger.info(
         "Splitting data into train and test datasets." f"Test size: {TEST_SIZE}"
@@ -72,6 +76,7 @@ def train_eval():
     sessions_test = sessions.loc[id_test, :]
 
     # store training data
+    TRAIN_PATH: str = cfg.source.destination_path.train
     os.makedirs(TRAIN_PATH, exist_ok=True)
 
     users_train.to_csv(TRAIN_PATH + "/users.csv", index=False)
@@ -79,6 +84,7 @@ def train_eval():
     logger.info(f"Training data saved into: {TRAIN_PATH}")
 
     # store test data
+    TEST_PATH: str = cfg.source.destination_path.test
     os.makedirs(TEST_PATH, exist_ok=True)
 
     users_test.to_csv(TEST_PATH + "/users.csv", index=False)
@@ -94,28 +100,35 @@ def predict():
     a staging database, prior to its preprocessing.
     """
 
-    # Variable declaration
-    COMPETITION_NAME: str = "airbnb-recruiting-new-user-bookings"
-    DESTINATION_PATH: str = "data/predict/source"
+    # Extract data from source
+    logger.info("Getting datasets from Kaggle competition API")
+    COMPETITION_NAME: str = cfg.source.competition_name
+    source = kaggle.CompetitionAPI(competition_name=COMPETITION_NAME)
 
     users: pd.DataFrame
     sessions: pd.DataFrame
-
-    # Extract data from source
-    logger.info("Getting datasets from Kaggle competition API")
-
-    source = kaggle.CompetitionAPI(competition_name=COMPETITION_NAME)
-    # FALTAN PARAMETROS
-    users = source.read_csv(filename="test_users.csv", index_col="id")
-    sessions = source.read_csv(filename="sessions.csv", index_col="user_id")
+    users = source.read_csv(
+        filename=cfg.source.data.users.filename.predict,
+        index_col=cfg.source.data.users.id_col,
+    )
+    sessions = source.read_csv(
+        filename=cfg.source.data.sessions.filename.predict,
+        index_col=cfg.source.data.sessions.id_col,
+    )
 
     # Valid users are those available in both users and sessions datasets.
     valid_ids = intersect_index(users, sessions)
+
+    not_valid_ids = users[~(users.index.isin(valid_ids))]
+    logger.warning(
+        f"{len(not_valid_ids)} users from sessions not found in" " users dataset"
+    )
 
     users_valid = users.loc[valid_ids, :]
     sessions_valid = sessions.loc[valid_ids, :]
 
     # store_data
+    DESTINATION_PATH: str = cfg.source.destination_path.predict
     os.makedirs(DESTINATION_PATH, exist_ok=True)
 
     users_valid.to_csv(DESTINATION_PATH + "/users.csv", index=False)
