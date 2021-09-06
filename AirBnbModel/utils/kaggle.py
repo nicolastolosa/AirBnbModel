@@ -148,12 +148,12 @@ class CompetitionAPI:
                 quiet=True,
             )
 
-        except ApiException as e:
+        except ApiException:
             error_msg = (
                 f"Unable to find {filename} in {self.competition_name} competition"
             )
-            logger.exception(e)
-            raise FileNotFoundError(error_msg)
+            logger.exception(error_msg)
+            raise FileNotFoundError
 
         logger.info(
             f"{filename} succesfully downloaded from {self.competition_name} Kaggle competition"

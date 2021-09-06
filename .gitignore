@@ -3,7 +3,7 @@ Notebooks_TFM/
 
 # Data not included due to license limitations
 notebooks/exploration_data/
-data
+data/
 
 # vscode configuration
 .vscode/
