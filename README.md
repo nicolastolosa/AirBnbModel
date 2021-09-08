@@ -2,7 +2,7 @@ AirBnbModel - predicting the destination country of the first reservation
 for new users of AirBnb
 ---------------------------
 
-=====================================================================
+-----------------------------
 **AirBnbModel** is a Python package containing a classification 
 model for predicting the destination country of the first reservation for new 
 users of AirBnb.
@@ -10,7 +10,7 @@ users of AirBnb.
 This model uses users' data as an input (age, gender, language...), as well as 
 information related to the actions taken by the users on the website of AirBnb, 
 and returns a prediction encoded in form of an integer between 0 and 12.
-=====================================================================
+------------------------------
 
 warning
 ----------------
