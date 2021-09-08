@@ -22,7 +22,7 @@ usage
 
 - All functionallity of the model can be accessed through cmd, 
   running 
-  >>> $python -m AirBnbModel --task {taskname} --mode
+  > $python -m AirBnbModel --task {taskname} --mode
 - Further help on the features and usage of the package can be found by running 
   $pydoc AirBnbModel
 - Further help on the features and usage of the submodules can be found by running 
